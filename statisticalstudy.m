@@ -1,6 +1,6 @@
 %% Loading the file
 
-path="C:\Users\ffran\Dropbox\TFG\MatLab\Output files\Escenarios\25-02-2020 171914-samples.txt";
+path="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Sample files\Escenarios\Pruebas\25-02-2020 171914-samples.txt";
 samples=csvread(path);
 
 %% Calculating statisctical moments
@@ -43,18 +43,15 @@ xlabel("Deviation PDF estimation");
 
 %% Saving results & figures
 
-path="C:\Users\ffran\Dropbox\TFG\MatLab\Output files\Escenarios\salida_prueba.txt";
-file_output=fopen(path);
+path="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Pruebas\salida_prueba.txt.txt";
+fileID=fopen(path,'w');
+
 real_distance=mean(samples(:,3));
-fprintf(file_output,"%f %f %f",real_distance,distanceMean,distanceDeviation);
+fprintf(fileID,"%f,%f,%f",real_distance,distanceMean,distanceDeviation);
 
 bar(dist_histogram);
 saveas(gcf,'distance_histogram.png');
-bar(dev_histogram);
-fprintf(file_output,"%f %f %f",real_distance,distanceMean,deviationMean);
-bar(distance_histogram);
-saveas(gcf,'distance_histogram.png');
-bar(deviation_histogram);
+bar(dev_histogram);git add
 saveas(gcf,'deviation_histogram.png');
 bar(dist_pdf_estimation);
 saveas(gcf,'dist_pdf_estimation.png');
