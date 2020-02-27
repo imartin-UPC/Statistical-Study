@@ -1,6 +1,6 @@
 %% Loading the file
 
-path="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Sample files\Escenarios\Pruebas\25-02-2020 171914-samples.txt";
+path="C:\Users\ffran\Dropbox\TFG\Statistical-Study\25-02-2020 171914-samples.txt";
 samples=csvread(path);
 
 %% Calculating statisctical moments & Saving results & figures
@@ -45,7 +45,7 @@ plot(dev_pdf_estimation);
 xlabel("Deviation PDF estimation");
 saveas(gcf,'deviation_pdf_estimation.png');
 
-path="C:\Users\ffran\Dropbox\TFG\Statistical-Study\salida_prueba.txt.txt";
+path="C:\Users\ffran\Dropbox\TFG\Statistical-Study\salida_samples_prueba.txt";
 fileID=fopen(path,'w');
 
 real_distance=mean(samples(:,2));
