@@ -3,7 +3,7 @@
 path="C:\Users\ffran\Dropbox\TFG\Statistical-Study\25-02-2020 171914-samples.txt";
 samples=csvread(path);
 
-%% Calculating statisctical moments & Saving results & figures
+%% Calculating statisctical moments
 
 %Deviation parameters
 deviations=samples(:,4);
@@ -15,7 +15,7 @@ distances=samples(:,3);
 distanceMean=mean(distances);
 distanceDeviation=std(distances);
 
-%% Plotting desired graphs
+%% Plotting desired graphs & Saving results & figures
 
 %Distance histogram
 figure(1);
