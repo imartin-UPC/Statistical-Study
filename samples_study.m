@@ -8,11 +8,13 @@ samples=csvread(path);
 %Deviation parameters
 deviations=samples(:,4);
 deviationMean=mean(deviations);
+deviationMedian=median(deviations);
 deviationDeviation=std(deviations);
 
 %Distance parameters
 distances=samples(:,3);
 distanceMean=mean(distances);
+distanceMedian=median(distances);
 distanceDeviation=std(distances);
 
 %% Plotting desired graphs & Saving results & figures
@@ -49,6 +51,6 @@ path="C:\Users\ffran\Dropbox\TFG\Statistical-Study\salida_samples_prueba.txt";
 fileID=fopen(path,'w');
 
 real_distance=mean(samples(:,2));
-fprintf(fileID,"%f,%f,%f",real_distance,distanceMean,distanceDeviation);
+fprintf(fileID,"%f,%f,%f,%f",real_distance,distanceMean,distanceDeviation,distanceMedian);
 
 fclose(fileID);
