@@ -7,6 +7,7 @@ samples=csvread(path);
 dir_out="C:\Users\ffran\Dropbox\TFG\Statistical-Study\prueba_output_samples\";
 [real_distance,distanceMean,distanceDeviation,distanceMedian] = samples_study(dir_out,"salida_samples_prueba.txt",samples);
 
+
 %% Batches Statistical Study
 % Loading the file
 path="C:\Users\ffran\Dropbox\TFG\Statistical-Study\prueba_input\25-02-2020 193225-batches.txt";

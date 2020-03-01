@@ -3,6 +3,12 @@ function [mean_att_samples,mean_succ_samples,BSSID,succ_ratio,path_out] = batche
 %Success Ratio Calculation
 successful_samples_vector=batches(:,3);
 attempted_samples_vector=batches(:,4);
+vNormalSucc=fitdist(successful_samples,'Normal');
+normalSuccCI=paramci(vNormalSucc);
+SuccCI=normalSuccCI(:,1);
+vNormalAtt=fitdist(attempted_samples,'Normal');
+normalAttCI=paramci(vNormalAtt);
+AttCI=normalAttCI(:,1);
 succ_ratio=mean(successful_samples_vector.Var3)/mean(attempted_samples_vector.Var4);
 
 %Getting the BSSID of the AP
@@ -19,14 +25,6 @@ successful_samples=successful_samples_vector.Var3;
 mean_succ_samples=mean(successful_samples);
 dev_succ_samples=std(successful_samples);
 
-% CI calculating
-vNormalSucc=fitdist(successful_samples,'Normal');
-normalSuccCI=paramci(vNormalSucc);
-SuccCI=normalSuccCI(:,1);
-vNormalAtt=fitdist(attempted_samples,'Normal');
-normalAttCI=paramci(vNormalAtt);
-AttCI=normalAttCI(:,1);
-
 % Saving figures 
 histogram(attempted_samples - successful_samples,12);
 title("Failed samples histogram");
@@ -36,7 +34,7 @@ saveas(gcf,dir_out+'failed_samples_histogram.png');
 % Saving Information gathered
 path_out=dir_out+filename_output;
 fileID=fopen(path_out,'w');
-fprintf(fileID,"%f,%f,%f,%f,%f,%f,%f,%f,%s,%f",mean_att_samples,AttCI(1),AttCI(2),dev_att_samples,mean_succ_samples,SuccCI(1),SuccCI(2),dev_succ_samples,BSSID,succ_ratio);
+fprintf(fileID,"%f,%f,%f,%f,%f,%f,%f,%f,%s,%f",mean_att_samples,AttCI(1),AttCI(2),dev_att_samples,mean_succ_samples,SuccCI(1),Succdev_succ_samples,BSSID,succ_ratio);
 fclose(fileID);
 end
 
