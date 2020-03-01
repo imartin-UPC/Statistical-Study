@@ -1,56 +1,50 @@
-%% Loading the file
-
-path="C:\Users\ffran\Dropbox\TFG\Statistical-Study\25-02-2020 171914-samples.txt";
-samples=csvread(path);
-
-%% Calculating statisctical moments
-
-%Deviation parameters
+function [real_distance,distanceMean,distanceDeviation,distanceMedian] = samples_study(dir_out,filename_output,samples)
+% Calculating statisctical moments
+% Deviation parameters
 deviations=samples(:,4);
 deviationMean=mean(deviations);
 deviationMedian=median(deviations);
 deviationDeviation=std(deviations);
 
-%Distance parameters
+% Distance parameters
 distances=samples(:,3);
 distanceMean=mean(distances);
 distanceMedian=median(distances);
 distanceDeviation=std(distances);
+real_distance=mean(samples(:,2));
 
-%% Plotting desired graphs & Saving results & figures
-
-%Distance histogram
+% Plotting desired graphs & Saving results & figures
+% Distance histogram
 figure(1);
 dist_histogram=histogram(distances,12);
 title("Distance histogram");
 xlabel("N=2000");
-saveas(gcf,"distance_histogram.png");
+saveas(gcf,dir_out+"distance_histogram.png");
 
-%Deviation histogram
+% Deviation histogram
 figure(2);
 dev_histogram=histogram(deviations,12);
 title("Deviation histogram");
 xlabel("N=2000");
-saveas(gcf,'deviation_histogram.png');
+saveas(gcf,dir_out+'deviation_histogram.png');
 
-%Distance PDF estimation
+% Distance PDF estimation
 figure(3);
 dist_pdf_estimation=ksdensity(distances);
 plot(dist_pdf_estimation);
 xlabel("Distance PDF estimation");
-saveas(gcf,'distance_pdf_estimation.png');
+saveas(gcf,dir_out+'distance_pdf_estimation.png');
 
-%Deviation PDF estimation
+% Deviation PDF estimation
 figure(4);
 dev_pdf_estimation=ksdensity(deviations);
 plot(dev_pdf_estimation);
 xlabel("Deviation PDF estimation");
-saveas(gcf,'deviation_pdf_estimation.png');
+saveas(gcf,dir_out+'deviation_pdf_estimation.png');
 
-path="C:\Users\ffran\Dropbox\TFG\Statistical-Study\salida_samples_prueba.txt";
-fileID=fopen(path,'w');
-
-real_distance=mean(samples(:,2));
+% Saving information
+path_out=dir_out+filename_output;
+fileID=fopen(path_out,'w');
 fprintf(fileID,"%f,%f,%f,%f",real_distance,distanceMean,distanceDeviation,distanceMedian);
-
 fclose(fileID);
+end
