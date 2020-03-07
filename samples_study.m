@@ -17,32 +17,35 @@ deviationMedian=median(deviations);
 deviationDeviation=std(deviations);
 deviationCI=normalCI(:,2);
 
+% Error parameters
+error=samples(:,2)-samples(:,3);
+[MAE, RMSE, prctiles]=error_study(error,dir_out);
+
+
 % Plotting desired graphs & Saving results & figures
 % Distance histogram
 figure(1);
-dist_histogram=histogram(distances,12);
+dist_histogram=histogram(distances,18);
 title("Distance histogram");
 xlabel("N=2000");
 saveas(gcf,dir_out+"distance_histogram.png");
 
 % Deviation histogram
 figure(2);
-dev_histogram=histogram(deviations,12);
+dev_histogram=histogram(deviations,18);
 title("Deviation histogram");
 xlabel("N=2000");
 saveas(gcf,dir_out+'deviation_histogram.png');
 
 % Distance PDF estimation
 figure(3);
-dist_pdf_estimation=ksdensity(distances);
-plot(dist_pdf_estimation);
+ksdensity(distances);
 xlabel("Distance PDF estimation");
 saveas(gcf,dir_out+'distance_pdf_estimation.png');
 
 % Deviation PDF estimation
 figure(4);
-dev_pdf_estimation=ksdensity(deviations);
-plot(dev_pdf_estimation);
+ksdensity(deviations);
 xlabel("Deviation PDF estimation");
 saveas(gcf,dir_out+'deviation_pdf_estimation.png');
 

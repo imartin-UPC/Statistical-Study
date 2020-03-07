@@ -1,10 +1,9 @@
 %% Samples Statistical Study
 % Loading the file
-path="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Sample files\Batería de prueba\Google\20m\03-03-2020 161752-samples.txt";
-samples=csvread(path);
+path="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Sample files\Batería de prueba\Linksys\5G\6e\20m\04-03-2020 163615-samples.txt";
 
 % Calling samples_study function
-dir_out="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Batería de prueba\Google\20m\";
+dir_out="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Batería de prueba\Linksys\5G\6e\20m\"
 [real_distance,distanceMean,distanceDeviation,distanceMedian] = samples_study(dir_out,"samples_output.txt",samples);
 
 %% Batches Statistical Study
