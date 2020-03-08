@@ -6,20 +6,21 @@ RMSE=sqrt(1/2000*sum(error.^2))
 % Error PDF, CDF & Histogram calculation
 figure(1);
 cdfplot(error);
-xlabel("Error CDF Estimation");
+title("Error CDF Estimation");
 saveas(gcf,dir_out+'error_cdf_estimation.png');
 savefig(dir_out+'error_cdf_estimation.fig');
 
 figure(2);
 ksdensity(error);
-xlabel("Error PDF Estimation");
+title("Error PDF Estimation");
+xlabel("Distance (m)");
 saveas(gcf,dir_out+'error_pdf_estimation.png');
 savefig(dir_out+'error_cdf_estimation.fig');
 
 figure(3);
-histogram_error=histogram(error,18);
-title("Error histogram");
-xlabel("N=2000");
+histogram_error=histogram(error,20);
+title("Error histogram [N=2000]");
+xlabel("Distance (m)");
 saveas(gcf,dir_out+'error_histogram.png');
 savefig(dir_out+'error_histogram.fig');
 
