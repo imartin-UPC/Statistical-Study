@@ -24,30 +24,34 @@ error=samples(:,2)-samples(:,3);
 
 % Plotting desired graphs & Saving results & figures
 % Distance histogram
-figure(1);
+figure(4);
 dist_histogram=histogram(distances,18);
 title("Distance histogram");
 xlabel("N=2000");
 saveas(gcf,dir_out+"distance_histogram.png");
+savefig(dir_out+'distance_histogram.fig');
 
 % Deviation histogram
-figure(2);
+figure(5);
 dev_histogram=histogram(deviations,18);
 title("Deviation histogram");
 xlabel("N=2000");
 saveas(gcf,dir_out+'deviation_histogram.png');
+savefig(dir_out+'deviation_histogram.fig');
 
 % Distance PDF estimation
-figure(3);
+figure(6);
 ksdensity(distances);
 xlabel("Distance PDF estimation");
 saveas(gcf,dir_out+'distance_pdf_estimation.png');
+savefig(dir_out+'distance_pdf_estimation.fig');
 
 % Deviation PDF estimation
-figure(4);
+figure(7);
 ksdensity(deviations);
 xlabel("Deviation PDF estimation");
 saveas(gcf,dir_out+'deviation_pdf_estimation.png');
+savefig(dir_out+'deviation_pdf_estimation.fig');
 
 % Saving information
 path_out=dir_out+filename_output;

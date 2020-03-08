@@ -4,18 +4,24 @@ MAE=mean(abs(error));
 RMSE=sqrt(1/2000*sum(error.^2))
 
 % Error PDF, CDF & Histogram calculation
+figure(1);
 cdfplot(error);
 xlabel("Error CDF Estimation");
 saveas(gcf,dir_out+'error_cdf_estimation.png');
+savefig(dir_out+'error_cdf_estimation.fig');
 
+figure(2);
 ksdensity(error);
 xlabel("Error PDF Estimation");
 saveas(gcf,dir_out+'error_pdf_estimation.png');
+savefig(dir_out+'error_cdf_estimation.fig');
 
+figure(3);
 histogram_error=histogram(error,18);
 title("Error histogram");
 xlabel("N=2000");
 saveas(gcf,dir_out+'error_histogram.png');
+savefig(dir_out+'error_histogram.fig');
 
 % Percentile calculation
 prctiles=zeros(7);
