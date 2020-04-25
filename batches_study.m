@@ -27,6 +27,7 @@ succ_ratio=mean_succ_samples/mean_att_samples;
 % Saving figures 
 histogram(attempted_samples - successful_samples,12);
 title("Failed samples histogram");
+ylabel('Nº of failed samples')
 xlabel("Attempted - Successful samples");
 saveas(gcf,dir_out+'failed_samples_histogram.png');
 savefig(gcf,dir_out+'failed_samples_histogram.fig');

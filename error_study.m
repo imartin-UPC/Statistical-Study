@@ -1,4 +1,4 @@
-function [MAE, RMSE, prctiles]=error_study(error,dir_out)
+function [MAE, RMSE]=error_study(error,dir_out)
 % Calculating important error parameters
 MAE=mean(abs(error));
 RMSE=sqrt(1/2000*sum(error.^2))
@@ -20,6 +20,7 @@ savefig(dir_out+'error_cdf_estimation.fig');
 figure(3);
 histogram_error=histogram(error,20);
 title("Error histogram [N=2000]");
+ylabel('Nº of samples');
 xlabel("Distance (m)");
 saveas(gcf,dir_out+'error_histogram.png');
 savefig(dir_out+'error_histogram.fig');
@@ -37,6 +38,6 @@ prctiles(7)=prctile(abs(error),95);
 filename_output='error_output.txt';
 path_out=dir_out+filename_output;
 fileID=fopen(path_out,'w');
-fprintf(fileID,"%f,%f",MAE,RMSE);
+fprintf(fileID,"%f,%f,%f,%f,%f,%f,%f,%f,%f",MAE,RMSE,prctiles(1),prctiles(2),prctiles(3),prctiles(4),prctiles(5),prctiles(6),prctiles(7));
 fclose(fileID);
 end

@@ -1,30 +1,30 @@
-%% Establish path to wanted files
+% Establish path to wanted files
 
-path1="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Horizontal\1m\error_output.txt";
-path2="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Horizontal\2m\error_output.txt";
-path3="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Horizontal\3m\error_output.txt";
-path4="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Horizontal\4m\error_output.txt";
-path5="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Horizontal\5m\error_output.txt";
-path6="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Horizontal\6m\error_output.txt";
-path7="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Horizontal\7m\error_output.txt";
-path8="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Horizontal\8m\error_output.txt";
-path9="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Horizontal\9m\error_output.txt";
-path10="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Horizontal\10m\error_output.txt";
-path11="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Horizontal\11m\error_output.txt";
-path12="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Horizontal\12m\error_output.txt";
-path13="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Horizontal\13m\error_output.txt";
-path14="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Horizontal\14m\error_output.txt";
-path15="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Horizontal\15m\error_output.txt";
-path16="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Horizontal\16m\error_output.txt";
-path17="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Horizontal\17m\error_output.txt";
-path18="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Horizontal\18m\error_output.txt";
-path19="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Horizontal\19m\error_output.txt";
-path20="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Horizontal\20m\error_output.txt";
-path21="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Horizontal\21m\error_output.txt";
-path22="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Horizontal\22m\error_output.txt";
-path23="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Horizontal\23m\error_output.txt";
+path1="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Google\Interior Pasillo\Orientacion Horizontal\1m\error_output.txt";
+path2="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Google\Interior Pasillo\Orientacion Horizontal\2m\error_output.txt";
+path3="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Google\Interior Pasillo\Orientacion Horizontal\3m\error_output.txt";
+path4="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Google\Interior Pasillo\Orientacion Horizontal\4m\error_output.txt";
+path5="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Google\Interior Pasillo\Orientacion Horizontal\5m\error_output.txt";
+path6="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Google\Interior Pasillo\Orientacion Horizontal\6m\error_output.txt";
+path7="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Google\Interior Pasillo\Orientacion Horizontal\7m\error_output.txt";
+path8="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Google\Interior Pasillo\Orientacion Horizontal\8m\error_output.txt";
+path9="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Google\Interior Pasillo\Orientacion Horizontal\9m\error_output.txt";
+path10="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Google\Interior Pasillo\Orientacion Horizontal\10m\error_output.txt";
+path11="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Google\Interior Pasillo\Orientacion Horizontal\11m\error_output.txt";
+path12="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Google\Interior Pasillo\Orientacion Horizontal\12m\error_output.txt";
+path13="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Google\Interior Pasillo\Orientacion Horizontal\13m\error_output.txt";
+path14="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Google\Interior Pasillo\Orientacion Horizontal\14m\error_output.txt";
+path15="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Google\Interior Pasillo\Orientacion Horizontal\15m\error_output.txt";
+path16="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Google\Interior Pasillo\Orientacion Horizontal\16m\error_output.txt";
+path17="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Google\Interior Pasillo\Orientacion Horizontal\17m\error_output.txt";
+path18="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Google\Interior Pasillo\Orientacion Horizontal\18m\error_output.txt";
+path19="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Google\Interior Pasillo\Orientacion Horizontal\19m\error_output.txt";
+path20="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Google\Interior Pasillo\Orientacion Horizontal\20m\error_output.txt";
+path21="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Google\Interior Pasillo\Orientacion Horizontal\21m\error_output.txt";
+path22="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Google\Interior Pasillo\Orientacion Horizontal\22m\error_output.txt";
+path23="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Google\Interior Pasillo\Orientacion Horizontal\23m\error_output.txt";
 
-%% Load the values from the file
+% Load the values from the file
 
 input1=load(path1);
 input2=load(path2);
@@ -50,7 +50,7 @@ input21=load(path21);
 input22=load(path22);
 input23=load(path23);
 
-%% Create the output vectors
+% Create the output vectors
 
 mae_ev=zeros(23);
 mae_ev(1)=input1(:,1);
@@ -103,21 +103,72 @@ rmse_ev(22)=input22(:,2);
 rmse_ev(23)=input23(:,2);
 
 
-%% Plot the desired graphic
+% Plot the desired graphic for all samples
 
 x=1:1:23;
-dir_out="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Horizontal\";
+z=1:23;
+z=z';
+X= [z,ones(23,1)];
+dir_out="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Google\Interior Pasillo\Orientacion Horizontal\";
+
+coef=X\mae_ev(:,1);
+mae=polyval(coef,z);
 
 figure(1);
-graphic=plot(x,mae_ev(:,1));
+plot(x,mae_ev(:,1)');
+hold on;
+plot(x,mae');
 xlabel('Distance between AP & Smartphone')
 title('MAE Evolution');
 saveas(gcf,dir_out+'mae_evolution.png');
 savefig(dir_out+'mae_evolution.fig');
+hold off;
+
+coef=X\rmse_ev(:,1);
+rmse=polyval(coef,z);
 
 figure(2);
-graphic=plot(x,rmse_ev(:,1));
-xlabel('Distance between AP & Smartphone')
+plot(x,rmse_ev(:,1));
+hold on;
+plot(x,rmse');
+hold off;
+xlabel('Distance between AP & Smartphone (m)')
 title('RMSE Evolution');
 saveas(gcf,dir_out+'rmse_evolution.png');
 savefig(dir_out+'rmse_evolution.fig');
+
+% Plot the desired graphic from 4m to 23m samples
+
+x=4:1:23;
+z=1:20;
+z=z';
+X= [z,ones(20,1)];
+dir_out="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Google\Interior Pasillo\Orientacion Horizontal\";
+
+aux_mae=mae_ev(4:23)';
+coef=X\aux_mae(:,1);
+mae=polyval(coef,z);
+
+figure(3);
+plot(x,aux_mae(:,1));
+hold on;
+plot(x,mae');
+xlabel('Distance between AP & Smartphone')
+title('MAE Evolution');
+saveas(gcf,dir_out+'mae_partial_evolution.png');
+savefig(dir_out+'mae_partial_evolution.fig');
+hold off;
+
+aux_rmse=rmse_ev(4:23)';
+coef=X\aux_rmse(:,1);
+rmse=polyval(coef,z);
+
+figure(4);
+plot(x,aux_rmse(:,1));
+hold on;
+plot(x,rmse');
+hold off;
+xlabel('Distance between AP & Smartphone (m)')
+title('RMSE Evolution');
+saveas(gcf,dir_out+'rmse_partial_evolution.png');
+savefig(dir_out+'rmse_partial_evolution.fig');

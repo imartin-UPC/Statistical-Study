@@ -19,7 +19,7 @@ deviationCI=normalCI(:,2);
 
 % Error parameters
 error=samples(:,2)-samples(:,3);
-[MAE, RMSE, prctiles]=error_study(error,dir_out);
+[MAE, RMSE]=error_study(error,dir_out);
 
 
 % Plotting desired graphs & Saving results & figures
@@ -27,6 +27,7 @@ error=samples(:,2)-samples(:,3);
 figure(4);
 dist_histogram=histogram(distances,20);
 title("Distance histogram [N=2000]");
+ylabel('Nº of samples');
 xlabel("Distance (m)");
 saveas(gcf,dir_out+"distance_histogram.png");
 savefig(dir_out+'distance_histogram.fig');
@@ -35,6 +36,7 @@ savefig(dir_out+'distance_histogram.fig');
 figure(5);
 dev_histogram=histogram(deviations,20);
 title("Deviation histogram [N=2000]");
+ylabel('Nº of samples');
 xlabel("Distance (m)");
 saveas(gcf,dir_out+'deviation_histogram.png');
 savefig(dir_out+'deviation_histogram.fig');
