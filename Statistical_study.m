@@ -1,6 +1,6 @@
 %% Samples Statistical Study
 % Loading the file
-path="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Sample files\Escenarios\Google\Interior Pasillo\Orientacion Horizontal\1m\09-03-2020 164441-samples.txt"
+path="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Sample files\Escenarios\Google\Interior Pasillo\Orientacion Horizontal\1m\09-03-2020 164441-samples.txt";
 samples=csvread(path);
 
 % Calling samples_study function
