@@ -21,15 +21,6 @@ deviationCI=normalCI(:,2);
 error=samples(:,2)-samples(:,3);
 [MAE, RMSE]=error_study(error,dir_out);
 
-%Distance percentile calculation
-prctiles=zeros(7);
-prctiles(1)=prctile(distances,5);
-prctiles(2)=prctile(distances,25);
-prctiles(3)=prctile(distances,33);
-prctiles(4)=prctile(distances,66);
-prctiles(5)=prctile(distances,75);
-prctiles(6)=prctile(distances,90);
-prctiles(7)=prctile(distances,95);
 
 % Plotting desired graphs & Saving results & figures
 % Distance histogram

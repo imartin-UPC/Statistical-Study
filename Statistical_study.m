@@ -1,10 +1,10 @@
 %% Samples Statistical Study
 % Loading the file
-path="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Sample files\Escenarios\Google\Interior Pasillo\Orientacion Horizontal\1m\09-03-2020 164441-samples.txt";
+path="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Sample files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Vertical\23m\11-03-2020 162330-samples.txt";
 samples=csvread(path);
 
 % Calling samples_study function
-dir_out="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Google\Interior Pasillo\Orientacion Horizontal\1m\";
+dir_out="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Vertical\23m\";
 [real_distance,distanceMean,distanceDeviation,distanceMedian] = samples_study(dir_out,"samples_output.txt",samples);
 
 %% Batches Statistical Study
