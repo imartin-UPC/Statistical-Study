@@ -28,13 +28,13 @@ savefig(dir_outModel+'qqplot_distance_VS_model.fig');
 
 %%  QQ-Plot of the measured distance VS other scenario
 % Load sample file
-path="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Sample files\Escenarios\Google\Interior Pasillo\Orientacion Vertical\23m\09-03-2020 163625-samples.txt";
+path="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Sample files\Escenarios\Google\Interior Pasillo\Orientacion Vertical\18m\09-03-2020 162015-samples.txt";
 samples=csvread(path);
 distances=samples(:,3);
-dir_out="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Comparaciones\Google vs Linksys 5,5\Orientación Vertical\23m\";
+dir_out="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Comparaciones\Google vs Linksys 5,5\Orientación Vertical\18m\";
 
 % Load samples file 2
-path3="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Sample files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Vertical\23m\11-03-2020 162330-samples.txt";
+path3="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Sample files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Vertical\19m\11-03-2020 161126-samples.txt";
 samples2=load(path3);
 distances2=samples2(:,3);
 
