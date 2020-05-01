@@ -27,14 +27,15 @@ saveas(gcf,dir_outModel+'qqplot_distance_VS_model.png');
 savefig(dir_outModel+'qqplot_distance_VS_model.fig');
 
 %%  QQ-Plot of the measured distance VS other scenario
+
 % Load sample file
-path="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Sample files\Escenarios\Google\Interior Pasillo\Orientacion Vertical\18m\09-03-2020 162015-samples.txt";
+path="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Sample files\Escenarios\Linksys\5G\5.1G\Interior Pasillo\Orientacion Vertical\1m\10-03-2020 171451-samples.txt";
 samples=csvread(path);
 distances=samples(:,3);
-dir_out="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Comparaciones\Google vs Linksys 5,5\Orientación Vertical\18m\";
+dir_out="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Comparaciones\Linksys 5,1 vs Linksys 5,5\Orientación Vertical\1m\";
 
 % Load samples file 2
-path3="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Sample files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Vertical\19m\11-03-2020 161126-samples.txt";
+path3="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Sample files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Vertical\1m\11-03-2020 151202-samples.txt";
 samples2=load(path3);
 distances2=samples2(:,3);
 
@@ -44,9 +45,9 @@ prctiles2 = prctile(distances2, 0:1:100);
 figure(2);
 qqplot(prctiles,prctiles2);
 
-txt=['QQ-Plot of Google 5G AP vs Linksys 5.5G AP at ',num2str(mean(samples(:,2))),'m'];
+txt=['QQ-Plot of Linksys 5.1G AP vs Linksys 5.5G AP at ',num2str(mean(samples(:,2))),'m'];
 title(txt);
-xlabel('Google 5G AP');
+xlabel('Linksys 5.1G AP');
 ylabel('Linksys 5.5G AP');
-saveas(gcf,dir_out+'qqplot_Google_VS_Linksys5.5.png');
-savefig(dir_out+'qqplot_Google_VS_Linksys5.5.fig');
+saveas(gcf,dir_out+'qqplot_Linksys5.1_VS_Linksys5.5.png');
+savefig(dir_out+'qqplot_Linksys5.1_VS_Linksys5.5.fig');
