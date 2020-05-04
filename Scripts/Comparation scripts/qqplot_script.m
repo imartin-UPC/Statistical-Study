@@ -23,19 +23,19 @@ txt=['Analytic Model of Gaussian with     ?=',num2str(mu),'    ?=',num2str(sigma
 xlabel(txt);
 txty=['Measured distance at ',num2str(samples_output(:,1)),'m by Linksys 5.5G AP'];
 ylabel(txty);
-saveas(gcf,dir_outModel+'qqplot_distance_VS_model.png');
-savefig(dir_outModel+'qqplot_distance_VS_model.fig');
+%saveas(gcf,dir_outModel+'qqplot_distance_VS_model.png');
+%savefig(dir_outModel+'qqplot_distance_VS_model.fig');
 
 %%  QQ-Plot of the measured distance VS other scenario
 
 % Load sample file
-path="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Sample files\Escenarios\Linksys\5G\5.1G\Interior Pasillo\Orientacion Vertical\1m\10-03-2020 171451-samples.txt";
+path="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Sample files\Escenarios\Linksys\5G\5.1G\Interior Pasillo\Orientacion Vertical\23m\10-03-2020 181715-samples.txt";
 samples=csvread(path);
 distances=samples(:,3);
-dir_out="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Comparaciones\Linksys 5,1 vs Linksys 5,5\Orientación Vertical\1m\";
+dir_out="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Output files\Escenarios\Comparaciones\Linksys 5,1 vs Linksys 5,5\Orientación Vertical\23m\";
 
 % Load samples file 2
-path3="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Sample files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Vertical\1m\11-03-2020 151202-samples.txt";
+path3="C:\Users\ffran\Dropbox\TFG\Statistical-Study\Sample files\Escenarios\Linksys\5G\5.5G\Interior Pasillo\Orientacion Vertical\23m\11-03-2020 162330-samples.txt";
 samples2=load(path3);
 distances2=samples2(:,3);
 
